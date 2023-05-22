@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css">
+    -->
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./src/style.css">
+    <title>HARADA works</title>
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">PROFILE</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">PROFILE</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const overlay = document.querySelector('.overlay');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+
+        function toggleMenu() {
+            hamburgerMenu.classList.toggle('open');
+            overlay.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+
+        hamburgerMenu.addEventListener('click', function(event) {
+            toggleMenu();
+            event.stopPropagation();
+        });
+        menuLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    </script> 
+
+    <main>
+        <div class="main_visual"></div>
+    </main>
+    <div class="works">
+        <h2>どんなことができる？</h2>
+        <ul>
+            <li>
+                <h3>HOMEPAGEの作成</h3>
+                <div class="caption">
+                    シンプルなサイトで的確な情報提供できるサイトの作成を心がけています。
+                    一人で作成するのに不安な方や、フォーム等の作成にお困りの方でも対応致します。
+                </div>
+            </li>
+            <li>
+                <h3>DiscordBotの作成運営</h3>
+                <div class="caption">
+                    一から作成しますので自分ごのみのカスタマイズなんかが可能です。<br>
+                    希望に応じて運用の代行も行いますので、<br>
+                    サポートも行います。(ご希望の場合、開発費に別途運用費がかかります)
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="question">
+        <h2>Q&A</h2>
+        <ul>
+            <li>
+                <div class="question">支払い方法は？</div>
+                <div class="answer">銀行振込になります。手数料はお客様負担になります。</div>
+            </li>
+            <li>
+                <div class="question">後からどんどん追加しながら一緒にゆっくり考えてほしい場合？</div>
+                <div class="answer">運用費をお支払いのお客様であれば継続的に追加等のサポートまでさせていただきます。</div>
+            </li>
+            <li>
+                <div class="question">運用費はどのぐらいの期間分？</div>
+                <div class="answer">1年単位になります。もしお支払いが期限を過ぎる場合、運用が停止する恐れがあります。</div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
