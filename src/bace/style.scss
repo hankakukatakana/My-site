@@ -119,4 +119,21 @@ body{
                 height: 90vh;
             }
     }
+    h2{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .border{
+        border: solid 2px #000;
+    }
+    footer{
+        background-color: #00000095;
+    }
+    .container{
+        width: 80%;
+    }
 }

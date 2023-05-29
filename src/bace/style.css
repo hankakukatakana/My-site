@@ -104,4 +104,21 @@ body main .main_visual {
   justify-content: center;
   align-items: center;
   height: 90vh;
+}
+body h2 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+body h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+body .border {
+  border: solid 2px #000;
+}
+body footer {
+  background-color: rgba(0, 0, 0, 0.5843137255);
+}
+body .container {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
