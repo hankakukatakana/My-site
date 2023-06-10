@@ -60,9 +60,6 @@ body h3 {
 body .border {
   border: solid 2px #000;
 }
-body footer {
-  background-color: rgba(0, 0, 0, 0.5843137255);
-}
 body .container {
   width: 80%;
 }/*# sourceMappingURL=style.css.map */
