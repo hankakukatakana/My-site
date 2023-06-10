@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+footer .sns {
+  color: #ffffff;
+  width: 100%;
+}
+footer .sns img {
+  width: 40px;
+  height: 40px;
+  margin: 0 40px;
+}/*# sourceMappingURL=footer.css.map */

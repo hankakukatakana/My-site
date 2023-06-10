@@ -1,2 +1,2 @@
-@import url(bace/style.scss);
-@import url(pages/style.scss);/*# sourceMappingURL=main.css.map */
+@import './layout/header.css';
+@import './bace/style.css';/*# sourceMappingURL=main.css.map */
