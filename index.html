@@ -34,13 +34,11 @@
         const overlay = document.querySelector('.overlay');
         const menu = document.querySelector('.menu');
         const menuLinks = document.querySelectorAll('.menu a');
-
         function toggleMenu() {
             hamburgerMenu.classList.toggle('open');
             overlay.classList.toggle('active');
             menu.classList.toggle('active');
         }
-
         hamburgerMenu.addEventListener('click', function(event) {
             toggleMenu();
             event.stopPropagation();
@@ -48,8 +46,7 @@
         menuLinks.forEach(link => {
             link.addEventListener('click', toggleMenu);
         });
-    </script> 
-
+    </script>
     <main>
         <div class="main_visual"></div>
     </main>
