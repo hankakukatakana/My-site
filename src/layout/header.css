@@ -5,9 +5,6 @@ header {
 header .raw {
   text-align: center;
 }
-header .raw .taitle {
-  font-size: 1;
-}
 header .raw .hamburger-menu {
   position: fixed;
   top: 20px;
