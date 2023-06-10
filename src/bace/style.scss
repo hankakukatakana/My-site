@@ -10,35 +10,32 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        
         ul {
-          li {
-            font-family: "851ゴチカクット";
-            margin-bottom: 10vh;
-            font-size: 4vh;
-            text-align: center;
-            padding: 1vh;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-          }
-          
-          li:hover {
-            background-color: #ffffff59;
-          }
+			li {
+				font-family: "851ゴチカクット";
+				margin-bottom: 10vh;
+				font-size: 4vh;
+				text-align: center;
+				padding: 1vh;
+				border-radius: 10px;
+				transition: background-color 0.3s ease;
+			}
+			
+			li:hover {
+				background-color: #ffffff59;
+			}
         }
-        
         &.active {
-          top: 0; // アクティブ状態では画面上部に表示
-          animation: waterDrop 0.5s forwards; // 水滴のアニメーションを適用
-        }
-        
-        @keyframes waterDrop {
-          0% {
-            clip-path: circle(0% at 50% 0); // 水滴の初期状態（非表示）
-          }
-          100% {
-            clip-path: circle(100%); // 水滴が広がる状態（表示）
-          }
+				top: 0; // アクティブ状態では画面上部に表示
+				animation: waterDrop 0.5s forwards; // 水滴のアニメーションを適用
+			}
+			@keyframes waterDrop {
+			0% {
+				clip-path: circle(0% at 50% 0); // 水滴の初期状態（非表示）
+			}
+			100% {
+				clip-path: circle(100%); // 水滴が広がる状態（表示）
+			}
         }
     }
     main{
