@@ -1,12 +1,13 @@
 @charset "UTF-8";
+body {
+  font-family: "G2サンセリフ-B";
+}
+
 header {
   background-color: #19B5FE;
 }
 header .raw {
   text-align: center;
-}
-header .raw .taitle {
-  font-size: 1;
 }
 header .raw .hamburger-menu {
   position: fixed;
@@ -104,19 +105,6 @@ footer {
   text-align: center;
   background-color: rgba(128, 128, 128, 0.5);
 }
-footer .sns {
-  color: #ffffff;
-  width: 100%;
-}
-footer .sns img {
-  width: 40px;
-  height: 40px;
-  margin: 0 40px;
-}
-
-body {
-  font-family: "G2サンセリフ-B";
-}
 
 body .menu {
   position: fixed;
@@ -178,9 +166,6 @@ body h3 {
 }
 body .border {
   border: solid 2px #000;
-}
-body footer {
-  background-color: rgba(0, 0, 0, 0.5843137255);
 }
 body .container {
   width: 80%;
