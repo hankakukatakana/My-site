@@ -106,6 +106,23 @@ footer {
   background-color: rgba(128, 128, 128, 0.5);
 }
 
+.wrapper {
+  perspective: 100vmax;
+}
+
+main {
+  margin-bottom: 0;
+}
+main .main_visual {
+  background-image: url(/image/main.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
 body .menu {
   position: fixed;
   top: -100%;
@@ -143,18 +160,6 @@ body .menu.active {
     -webkit-clip-path: circle(100%);
             clip-path: circle(100%);
   }
-}
-body main {
-  margin-bottom: 0;
-}
-body main .main_visual {
-  background-image: url(/image/main.jpg);
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
 }
 body h2 {
   font-size: 30px;
