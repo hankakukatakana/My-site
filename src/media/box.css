@@ -1,7 +1,8 @@
 .wrapper {
   perspective: 100vmax;
 }
-.wrapper .box {
+
+.box {
   transition: transform 1s;
   transform-style: preserve-3d;
   /* others */
@@ -18,10 +19,12 @@
   position: relative;
   box-shadow: 8px 8px 12px -4px rgba(0, 0, 0, 0.5);
 }
-.wrapper .box:hover {
+
+.box:hover {
   transform: rotate3d(0.1, 1, 0.1, 180deg);
 }
-.wrapper .box::before {
+
+.box::before {
   content: "";
   display: block;
   width: 100%;
