@@ -123,44 +123,6 @@ main .main_visual {
   height: 70vh;
 }
 
-body .menu {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(25, 181, 254, 0.7058823529);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .menu ul li {
-  font-family: "851ゴチカクット";
-  margin-bottom: 10vh;
-  font-size: 4vh;
-  text-align: center;
-  padding: 1vh;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-body .menu ul li:hover {
-  background-color: rgba(255, 255, 255, 0.3490196078);
-}
-body .menu.active {
-  top: 0;
-  animation: waterDrop 0.5s forwards;
-}
-@keyframes waterDrop {
-  0% {
-    -webkit-clip-path: circle(0% at 50% 0);
-            clip-path: circle(0% at 50% 0);
-  }
-  100% {
-    -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
-  }
-}
 body h2 {
   font-size: 30px;
   font-weight: bolder;
@@ -173,5 +135,6 @@ body .border {
   border: solid 2px #000;
 }
 body .container {
-  width: 80%;
+  width: min(100% - 2rem, 640px);
+  margin-inline: auto;
 }/*# sourceMappingURL=main.css.map */

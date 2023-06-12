@@ -1,6 +1,4 @@
 body{
-
-
     h2{
         font-size: 30px;
         font-weight: bolder;
@@ -12,10 +10,8 @@ body{
     .border{
         border: solid 2px #000;
     }
-    .container{
+    .container{	
         width: min(100% - 2rem,640px );
-		margin-inline: auto ;
-		align-items: center;
-    	justify-content: center;
+		margin-inline: auto;
     }
 }
