@@ -1,9 +1,13 @@
 .wrapper {
-    perspective: 100vmax;//遠近感
-
-
-}
-.box {
+    perspective: 100vmax;
+    /* others */
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .box {
     transition: transform 1s;
     transform-style: preserve-3d;
     /* others */
@@ -27,8 +31,9 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: url() no-repeat center/cover;
+    background: url(wolf.jpg) no-repeat center/cover;
     position: absolute;
     inset: 0 auto auto 0;
     transform: translate3d(0, 0, -8px);
   }
+  
