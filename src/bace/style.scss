@@ -15,5 +15,7 @@ body{
     .container{
         width: min(100% - 2rem,640px );
 		margin-inline: auto ;
+		align-items: center;
+    	justify-content: center;
     }
 }
