@@ -7,76 +7,93 @@
         <!-- reset css -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css">
         <!-- css -->
-        <link rel="stylesheet" href="./src/style.css">
+        <link rel="stylesheet" href="../src/main.css">
         <title>HARADA works</title>
         <!-- 自社ロゴ -->
     </head>
 <body>
     <header>
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href="/blog">BLOG</a></li>
-                <li><a href="/profile">PROFILE</a></li>
-                <li><a href="/works"></a>WORKS</li>
-            </ul>
-        </div>
-        <div class="overlay"></div>
-        <div class="menu">
-            <ul>
-                <li><a href="/blog">BLOG</a></li>
-                <li><a href="/profile">PROFILE</a></li>
-                <li><a href="/works"></a>WORKS</li>
-            </ul>
+        <div class="raw">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="overlay"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/works">WORKS</a></li>
+                    <li><a href="/profile">PROFILE</a></li>                
+                </ul>
+            </div>
         </div>
     </header>
-    技術的な話
-    <ul>
-        <li>
-            Node.js
-        </li>
-        <li>
-            Maincraft Serverの運営
-        </li>
-        <li>
-            静的サイトの作成
-        </li>
-        <li>
-            小規模の動的サイトの作成
-        </li>
-        <li>
-            
-        </li>
-    </ul>
-    <ul>
-        <li>HTML5 & CSS</li>
-        <li>JavaScript
-            <div class="caption">
-                HTMLに対してアニメーションをつけたり、バックエンドのNode.jsに用いるためのコードを書くことができます。
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const overlay = document.querySelector('.overlay');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+        function toggleMenu() {
+            hamburgerMenu.classList.toggle('open');
+            overlay.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+        hamburgerMenu.addEventListener('click', function(event) {
+            toggleMenu();
+            event.stopPropagation();
+        });
+        menuLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    </script>
+    <div class="container">
+        <h3></h3>
+
+        <div class="profile">
+            <div>
+                <h3>NAME</h3>
+                <p>MASAAKI HARADA</p>
             </div>
-        </li>
-        <li>Python
-            <div class="caption">
-                Flaskを用いて、動的サイトの作成が可能です。
+            <div>
+                <h3>SKILL</h3>
+                <ul class="icon">
+                    <li><img src="../img/icon/html5-01-svgrepo-com.svg" alt=""></li>
+                    <li><img src="../img/icon/css3-01-svgrepo-com.svg" alt=""></li>
+                    <li><img src="../img/icon/javascript-svgrepo-com.svg" alt=""></li>
+                    <li><img src="../img/icon/node-js-svgrepo-com.svg" alt=""></li>
+                    <li><img src="../img/icon/flask-svgrepo-com.svg" alt=""></li>
+                    <li><img src="../img/icon/powershell-svgrepo-com.svg" alt=""></li>
+                </ul>
             </div>
-        </li>
-        <li>VBA
-            <div class="caption">
-                表計算ソフトExcelの自動化に用いたコードを書くことができます。
+            <div >
+                <h3>LINK</h3>
+                <ul class="windows">
+                    <li>
+                        <div class="wrappar">
+                            <div class="box">
+                                Github
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrappar">
+                            <div class="box">
+                                Twitter
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrappar">
+                            <div class="box">
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </li>
-        <li>PowerShell</li>
-    </ul>
-    <ul>
-        <li>Node.js</li>
-        <li></li>
-    </ul>
-    <ul>
-        <li>Vue.js</li>
-    </ul>
+        </div>
+
+    </div>
 </body>
 </html>

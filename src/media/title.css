@@ -2,7 +2,7 @@ main {
   margin-bottom: 0;
 }
 main .main_visual {
-  background-image: url(/image/main.jpg);
+  background-image: url(/img/main.jpg);
   position: relative;
   background-size: cover;
   background-position: center center;
