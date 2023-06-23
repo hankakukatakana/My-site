@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.gallery-window {
+  display: flex; /* フレックスボックスを使用 */
+  align-items: center; /* 要素を縦方向に中央揃え */
+  height: 70vh;
+}
+.gallery-window h3 {
+  flex: 1; /* 残りのスペースを均等に分配 */
+}
+.gallery-window .caption {
+  text-align: right; /* テキストを右寄せにする */
+}/*# sourceMappingURL=gallery.css.map */

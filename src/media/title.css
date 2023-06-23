@@ -1,0 +1,12 @@
+main {
+  margin-bottom: 0;
+}
+main .main_visual {
+  background-image: url(/img/main.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}/*# sourceMappingURL=title.css.map */

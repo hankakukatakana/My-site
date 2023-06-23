@@ -2,6 +2,16 @@
 body {
   font-family: "G2サンセリフ-B";
 }
+body h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+body h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
 
 header {
   background-color: #19B5FE;
@@ -117,7 +127,7 @@ footer {
   margin: 10px;
 }
 
-.wrapper {
+.box-wrapper {
   perspective: 100vmax;
   /* others */
   padding: 5rem;
@@ -191,6 +201,22 @@ main .main_visual {
   height: auto;
 }
 
+.profile .profile-content {
+  margin-left: 30px;
+}
+
+.gallery-window {
+  display: flex; /* フレックスボックスを使用 */
+  align-items: center; /* 要素を縦方向に中央揃え */
+  height: 70vh;
+}
+.gallery-window h3 {
+  flex: 1; /* 残りのスペースを均等に分配 */
+}
+.gallery-window .caption {
+  text-align: right; /* テキストを右寄せにする */
+}
+
 .input-wrapper {
   position: relative;
 }
@@ -226,17 +252,23 @@ main .main_visual {
   pointer-events: none;
 }
 
-body h2 {
-  font-size: 30px;
-  font-weight: bolder;
+button {
+  padding: 10px 20px;
+  background-color: #0cf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-body h3 {
-  font-size: 20px;
-  font-weight: bolder;
+button:hover {
+  background-color: #08c;
 }
-body .border {
-  border: solid 2px #000;
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 204, 255, 0.5);
 }
+
 body .container {
   width: min(100% - 2rem, 840px);
   margin-inline: auto;

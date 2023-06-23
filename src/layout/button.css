@@ -1,0 +1,16 @@
+button {
+  padding: 10px 20px;
+  background-color: #0cf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #08c;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 204, 255, 0.5);
+}/*# sourceMappingURL=button.css.map */
