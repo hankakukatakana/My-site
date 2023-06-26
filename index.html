@@ -12,6 +12,19 @@
     <!-- 自社ロゴ -->
 </head>
 <body>
+    <div id="loading-screen">
+        <p>
+            MASAAKI HARADA
+        </p>
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                // 1秒後にローディング画面を非表示にする
+                document.getElementById("loading-screen").style.display = "none";
+            }, 2000); 
+        });
+    </script>
     <header>
         <div class="raw">
             <div class="hamburger-menu">
@@ -64,6 +77,10 @@
                             一人で作成するのに不安な方や、<br>
                             フォーム等の作成にお困りの方でも対応致します。
                         </div>
+                    </div>
+                    <span class="arrow"></span>
+                    <div>
+
                     </div>
                 </li>
                 <li>
