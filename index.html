@@ -8,19 +8,16 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./src/main.css">
-    <title>HARADA works</title>
-    <!-- 自社ロゴ -->
+    <title>HARADA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div id="loading-screen">
-        <p>
             MASAAKI HARADA
-        </p>
     </div>
     <script>
         window.addEventListener("load", function() {
             setTimeout(function() {
-                // 1秒後にローディング画面を非表示にする
                 document.getElementById("loading-screen").style.display = "none";
             }, 2000); 
         });
@@ -35,9 +32,6 @@
             <div class="overlay"></div>
             <div class="menu">
                 <ul>
-                    <!--
-                        <li><a href="/blog">BLOG</a></li>
-                    -->
                     <li><a href="/works">WORKS</a></li>
                     <li><a href="/profile">PROFILE</a></li>          
                 </ul>
@@ -65,80 +59,60 @@
     <main>
         <div class="main_visual"></div>
     </main>
-
-    <div class="container">
         <div class="gallery">
             <h2>どんなことができる？</h2>
-            <ul>
-                <li>
-                    <div class="gallery-window">
-                        <h3>HOMEPAGEの作成</h3>
-                        <div class="caption">
-                            一人で作成するのに不安な方や、<br>
-                            フォーム等の作成にお困りの方でも対応致します。
-                        </div>
+                <div class="gallery-window" style="background-color: yellow;">
+                    <div class="gallery-title">
+                        <h3>
+                            HOMEPAGEの作成
+                        </h3>
                     </div>
-                    <div class="arrow">
-                        <span></span>
-                        <span></span>                        
+                    <div class="caption">
+                        <img src="img/img (4).png" alt="" width="600px">
                     </div>
-                </li>
-                <li>
-                    <div class="gallery-window">
-                        <h3>DiscordBotの作成運営</h3>
-                        <div class="caption">
-                            一から作成しますので好みのカスタマイズなんかが可能です。<br>
-                            希望に応じて運用の代行も行いますので、サポートも行います。<br>
-                            (ご希望の場合、開発費に別途運用費がかかります)
-                        </div>
+                    <span class="material-symbols-outlined">
+                        expand_circle_down
+                    </span>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>                        
+                </div>
+                <div class="gallery-window" style="background-color: #5865F2;">
+                    <div class="gallery-title">
+                        <h3>DiscordBotの作成</h3>
                     </div>
-                    <div class="arrow">
-                        <span></span>
-                        <span></span>                        
+                    <div class="caption">
+                        <img src="img/img (2).png" alt="" width="600px">
+                        Node.jsでDiscordBotを作成してます。
                     </div>
-                </li>
-                <li>
-                    <div class="gallery-window">
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>                        
+                </div>
+                <div class="gallery-window" style="background-color: yellow;">
+                    <div class="gallery-title">
                         <h3>ツール開発</h3>
-                        <div class="caption">
-                            PowerShellや.NETを用いて簡易アプリケーションを作れます。<br>
-                            社内向けツールが欲しいが、インストール等を行いたくない。<br>
-                            現行のExcelファイル等を維持しながら使えるツール開発も行えます。
-                        </div>
                     </div>
-                    <div class="arrow">
-                        <span></span>
-                        <span></span>                        
+                    <div class="caption">
+                        <img src="img/img (1).png" alt="" width="600px">
+                        PowerShellや.NETを用いて事務作業向けの簡易アプリケーションを作れます。<br>
+                        VBAも使えるため現行のExcelファイル等を維持しながら使えるツールも作れます。
                     </div>
-                </li>
-            </ul>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>                        
+                </div>
         </div>
-        <!--
-        <div class="container">
-            <h2>Q&A</h2>
-            <ul class="QA">
-                <li>
-                    <h3 class="question">支払い方法は？</h3>
-                    <p class="answer">銀行振込になります。手数料はお客様負担になります。</p>
-                </li>
-                <li>
-                    <h3 class="question">後からどんどん追加しながら一緒にゆっくり考えてほしい場合？</h3>
-                    <p class="answer">運用費をお支払いのお客様であれば継続的に追加等のサポートまでさせていただきます。</p>
-                </li>
-                <li>
-                    <h3 class="question">運用費はどのぐらいの期間分？</h3>
-                    <p class="answer">1年単位になります。もしお支払いが期限を過ぎる場合、運用が停止する恐れがあります。</p>
-                </li>
-            </ul>
-        </div>
-        -->
-    </div>
+
     <div class="container">
         <div class="">
             <h2>職歴</h2>
             <ul>
-                <li>SES企業で1年間勤務</li>
-                <li>現在、カフェで働きながらフリーランスとして働いています。</li>
+                <li>SES企業で運用チームに1年間勤務。事務作業でPowershellやVBAを扱っていました。</li>
+                <li>現在、カフェで働いています。</li>
             </ul>
         </div>
     </div>
@@ -156,6 +130,12 @@
                     <h3>WHERE</h3>
                     <div class="profile-content">
                         横浜市在住
+                    </div>
+                </li>
+                <li>
+                    <h3>趣味</h3>
+                    <div class="profile-content">
+                        料理・ハンバーガーショップ巡り
                     </div>
                 </li>
                 <li>                
@@ -180,14 +160,18 @@
                             <li>
                                 <div class="box-wrappar">
                                     <div class="box">
-                                        Github
+                                        <a href="https://github.com/hankakukatakana">
+                                            Github
+                                        </a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="box-wrappar">
                                     <div class="box">
-                                        Twitter
+                                        <a href="https://twitter.com/444Hrd">
+                                            Twitter
+                                        </a>
                                     </div>
                                 </div>
                             </li>
