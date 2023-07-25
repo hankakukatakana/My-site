@@ -4,9 +4,14 @@ main{
             background-image: url(/img/main.jpg);
             position: relative;
             background-size: cover;
-            background-position: center center;    
+            background-position: center center;   
+            height: 70vh;
+
+            display: flex; 
             justify-content: center;
             align-items: center;
-            height: 70vh;
+            a{
+                background-color: aqua;
+            }
         }
 }

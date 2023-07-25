@@ -6,7 +6,11 @@ main .main_visual {
   position: relative;
   background-size: cover;
   background-position: center center;
+  height: 70vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+}
+main .main_visual a {
+  background-color: aqua;
 }/*# sourceMappingURL=title.css.map */
