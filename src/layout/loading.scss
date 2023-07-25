@@ -1,0 +1,18 @@
+loading-screen{
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); // オーバーレイの背景色
+        opacity: 0; 
+        z-index: 999; // メニューが他の要素の上に表示されるようにする
+        transition: opacity 0.3s ease; // フェードイン/フェードアウトのアニメーション
+
+        pointer-events: none;// マウスイベントを有効化
+        &.active {
+            opacity: 1; 
+        }
+    }
+}

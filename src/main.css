@@ -201,7 +201,8 @@ main .main_visual {
   justify-content: center;
   align-items: center;
 }
-main .main_visual a {
+main .main_visual .link-button {
+  border-radius: 40;
   background-color: aqua;
 }
 
