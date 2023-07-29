@@ -9,17 +9,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (width: 1080px) {
-            
-        }
     }  
     .caption {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width: min($numbers: );
-        }
     }
 }

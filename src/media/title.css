@@ -12,6 +12,13 @@ main .main_visual {
   align-items: center;
 }
 main .main_visual .link-button {
-  border-radius: 40;
+  display: flex;
+  height: 40px;
+  border-radius: 30px;
   background-color: aqua;
+  border: 1px solid blue;
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=title.css.map */
