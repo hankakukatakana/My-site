@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 }
-.gallery-window .caption {
+.gallery-window .gallery-img {
   flex: 1;
   display: flex;
   justify-content: center;

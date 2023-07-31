@@ -1,6 +1,12 @@
 @charset "UTF-8";
 body {
   font-family: "G2サンセリフ-B";
+  font-family: "DotGothic16", sans-serif;
+}
+body h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
 body h2 {
   font-size: 30px;
