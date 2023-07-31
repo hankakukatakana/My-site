@@ -10,7 +10,9 @@ main{
             display: flex; 
             justify-content: center;
             align-items: center;
-            a{
+            .link-button{
+
+                border-radius: 40;
                 background-color: aqua;
             }
         }
